@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+    
+<body>
+    <style>
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
+        }
+        * {
+          margin: 0;
+          padding: 0;
+          font: inherit;
+        }
+        body {
+          line-height: 1.5;
+        }
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
+          display: block;
+          max-width: 100%;
+        }
+        input,
+        button,
+        textarea,
+        select {
+          outline: none;
+        }
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          overflow-wrap: break-word;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #3ca7ee, #9b408f);
+
+        }
+        .img_container{
+            width: 300px;
+            height: 300px;
+            border-radius: 10px;
+
+        }
+        .img_container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <div class="img_container">
+        <img src="https://png.pngtree.com/thumb_back/fw800/back_our/20190628/ourmid/pngtree-hd-aurora-background-wallpaper-computer-wallpaper-3840x2400-image_264755.jpg" alt="">
+    </div>
+    <script src="app4.5.js"></script>
+</body>
+</html>

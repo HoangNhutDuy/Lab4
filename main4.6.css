@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+:root{
+    --sucess-color: #2691d9;
+    --error-color: #e74c3c;
+}
+.img_container {
+    position: relative;
+    height: 100vh;
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+html {
+    font-family: "Poppins";
+}
+
+form {
+    width: 400px;
+    object-fit: cover;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    padding: 30px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+    color: darkslateblue
+}
+
+input {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    /* border-radius: 8px; */
+    box-shadow: 1px 1px 20px 1px #eee;
+}
+
+::placeholder {
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 25px;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: darkviolet;
+    box-shadow: 1px 6px 20px 1px violet;
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 50px;
+    color: gray;
+}
+
+.fa-facebook-f,
+.fa-google {
+    margin-top: 25px;
+    box-shadow: 1px 6px 20px 1px #eee;
+    background-color: #dadada;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.fa-google{
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.fa-facebook-f {
+    margin-right: 15px;
+    color:  #3B5998;
+}
+.footer_form{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    color: darkslateblue;
+}
+.form_control{
+    position: relative;
+}
+.form_control span{
+    position: absolute;
+    border-bottom: 2px solid var(--sucess-color);
+    top: 85px;
+    left: 0;
+    transition: 0.3s;
+}
+.form_control input:focus ~ span{
+    width: 100%;
+}
+
+.form_control.error input{
+    border-bottom: 2px solid var(--error-color);
+}
+
+.form_control.error small{
+    color: var(--error-color);
+    margin-top: 10px;
+}
